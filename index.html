@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Tech | Assistência Técnica Especializada</title>
+
+    <style>
+        :root {
+            --primary: #020617;
+            --accent: #22c55e;
+            --bitcoin: #f7931a;
+            --light: #f4f4f5;
+            --text: #1f2933;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            background: #fff;
+        }
+
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.05rem;
+            display: inline-block;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
+        /* HERO COM FOTO REAL DE ASSISTÊNCIA */
+        .hero {
+            min-height: 90vh;
+            background:
+                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #d1d5db;
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 300px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+        }
+
+        .bitcoin {
+            background: #0b0b0b;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 4px solid var(--bitcoin);
+            border-bottom: 4px solid var(--bitcoin);
+        }
+
+        .bitcoin h3 {
+            color: var(--bitcoin);
+        }
+
+        .tag {
+            background: var(--bitcoin);
+            color: black;
+            display: inline-block;
+            padding: 6px 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+
+        .about {
+            background: var(--light);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #020617;
+            color: #9ca3af;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div>
+        <h1>Total Tech<br>Assistência Técnica</h1>
+        <p>
+            Conserto profissional de notebooks e PCs.<br>
+            Diagnóstico honesto, sem enrolação.
+        </p>
+
+        <a class="btn" href="https://wa.me/5511999999999">
+            Falar direto com o técnico
+        </a>
+    </div>
+</header>
+
+<section class="services">
+    <h2>Nossos serviços</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🔧 Manutenção e Formatação</h3>
+            <p>PC lento, travando.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Reparo em Notebook</h3>
+            <p>Não liga, não carrega, tela ou placa-mãe.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎮 PC Gamer</h3>
+            <p>Montagem, upgrade e otimização.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧼 Limpeza Técnica</h3>
+            <p>Limpeza interna e troca de pasta térmica.</p>
+        </div>
+    </div>
+</section>
+
+<section class="bitcoin">
+    <h3>Pagamento em Bitcoin ⚡</h3>
+    <p>Lightning Network aceito</p>
+    <div class="tag">10% OFF na mão de obra</div>
+</section>
+
+<section class="about">
+    <h2>Atendimento</h2>
+    <p>📍 Avenida São Miguel, Vila marieta – SP</p>
+    <p>🕒 Seg–Sex 09h–18h </p>
+
+    <br>
+    <a class="btn" style="background:#020617" href="https://wa.me/5511999999999">
+        Agendar agora
+    </a>
+</section>
+
+<footer>
+    <p>© 2025 Total Tech</p>
+    <p>Pix • Cartão • Bitcoin ⚡</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5511999999999">💬</a>
+
+</body>
+</html>
