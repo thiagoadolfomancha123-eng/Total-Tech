@@ -9,6 +9,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        
+        
+        .topbar {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 10;
+}
+
+.topbar img {
+    height: 48px;
+}
+        
         :root {
             --primary: #020617;
             --accent: #22c55e;
@@ -175,6 +188,14 @@
                 font-size: 2rem;
             }
         }
+
+        @media (max-width: 600px) {
+    .topbar {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
     </style>
 </head>
 <body>
