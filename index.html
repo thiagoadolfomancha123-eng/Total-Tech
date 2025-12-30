@@ -23,10 +23,6 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
@@ -49,7 +45,6 @@
 
         /* HERO */
         .hero {
-            position: relative;
             min-height: 95vh;
             background:
                 linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
@@ -67,46 +62,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            transform: translateY(20px);
         }
 
         .logo {
             max-width: 520px;
-            margin-top: 40px;
             margin-bottom: 40px;
         }
 
         .hero h1 {
             color: white;
             font-size: 2.8rem;
-            margin: 0 0 16px;
+            margin-bottom: 16px;
         }
 
         .hero p {
             color: #d1d5db;
             font-size: 1.15rem;
             max-width: 650px;
-            margin: 0 0 32px;
-        }
-
-        /* SETA SCROLL */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 26px;
-            animation: bounce 1.5s infinite;
-            opacity: 0.9;
-        }
-
-        .scroll-indicator svg {
-            width: 34px;
-            height: 34px;
-            stroke: white;
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.8));
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(10px); }
+            margin-bottom: 32px;
         }
 
         /* SERVIÇOS */
@@ -207,7 +180,6 @@
         @media (max-width: 600px) {
             .logo {
                 max-width: 300px;
-                margin-top: 20px;
                 margin-bottom: 30px;
             }
 
@@ -221,7 +193,7 @@
 
 <header class="hero">
     <div class="hero-content">
-        <img src="img/logo.png" alt="Total Tech Notebooks" class="logo">
+        <img src="img/logo.png" alt="Total Tech Assistência Técnica" class="logo">
 
         <h1>Total Tech<br>Assistência Técnica</h1>
 
@@ -234,15 +206,9 @@
             Falar direto com o técnico
         </a>
     </div>
-
-    <a href="#servicos" class="scroll-indicator" aria-label="Rolar página">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6"/>
-        </svg>
-    </a>
 </header>
 
-<section id="servicos" class="services">
+<section class="services">
     <h2>Nossos serviços</h2>
 
     <div class="grid">
