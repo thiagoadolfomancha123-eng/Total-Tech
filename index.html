@@ -152,12 +152,17 @@
         .scroll-indicator {
             position: absolute;
             bottom: 24px;
-            font-size: 36px;
+            font-size: 32px;
+            width: 44px;
+            height: 44px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 50%;
             color: white;
-            opacity: 0.9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             animation: bounce 1.5s infinite;
-            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
-        }
+        } 
 
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
