@@ -18,22 +18,35 @@
   <body>
     <div id="root"></div>
     <script>
-  document.querySelectorAll("span.relative.z-10").forEach(span => {
-    const texto = span.innerText.toLowerCase();
+  const aplicarVerde = () => {
+    document.querySelectorAll("span.relative.z-10").forEach(span => {
+      const texto = span.innerText.toLowerCase();
 
-    if (
-      texto.includes("agendar") ||
-      texto.includes("whatsapp") ||
-      texto.includes("técnico")
-    ) {
-      const botao = span.closest("a, button, div");
-      if (botao) {
-        botao.style.backgroundColor = "#25D366";
-        botao.style.color = "#ffffff";
-        botao.style.borderColor = "#25D366";
-        botao.style.borderRadius = "8px";
+      if (
+        texto.includes("agendar") ||
+        texto.includes("whatsapp") ||
+        texto.includes("técnico")
+      ) {
+        const botao = span.closest("a, button, div");
+        if (botao && !botao.dataset.verdeAplicado) {
+          botao.style.backgroundColor = "#25D366";
+          botao.style.color = "#ffffff";
+          botao.style.borderColor = "#25D366";
+          botao.style.borderRadius = "8px";
+          botao.dataset.verdeAplicado = "true";
+        }
       }
-    }
+    });
+  };
+
+  // roda quando o DOM carrega
+  document.addEventListener("DOMContentLoaded", aplicarVerde);
+
+  // observa mudanças do React
+  const observer = new MutationObserver(aplicarVerde);
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
   });
 </script>
 
