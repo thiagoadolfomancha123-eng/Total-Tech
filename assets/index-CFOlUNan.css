@@ -5,7 +5,7 @@
 /* TODOS os links que levam pra whatsapp, contato ou agendamento */
 a[href*="wa.me"],
 a[href*="whatsapp"],
-a[href*="contato"],
+a[href*="falar com Técnico"],
 a[href*="agendar"],
 a[href*="tecnico"],
 a[href*="falar"] {
