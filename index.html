@@ -183,6 +183,13 @@
             box-shadow: 0 6px 18px rgba(0,0,0,0.45);
             z-index: 999;
         }
+        .hero-logo {
+            max-width: 420px;      /* controla o tamanho */
+            width: 100%;
+            margin-bottom: 32px;   /* espaço entre logo e texto */
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6));
+        }
+
 
         /* MOBILE */
         @media (max-width: 600px) {
@@ -194,10 +201,15 @@
             max-width: 320px;
         }
             
-            .hero h1 {
-                font-size: 2rem;
-            }
+        .hero h1 {
+            font-size: 2rem;
         }
+
+        .hero-logo {
+            max-width: 260px;
+            margin-bottom: 24px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -208,12 +220,12 @@
     <img src="img/logo.png" alt="Total Tech Assistência Técnica" class="logo">
 </div>
 
-        <h1>Total Tech<br>Assistência Técnica</h1>
+        <img src="img/logo.png" alt="Total Tech Assistência Técnica" class="hero-logo">
 
-        <p>
-            Conserto profissional de notebooks e PCs.<br>
-            Diagnóstico honesto, sem enrolação.
-        </p>
+<p class="hero-sub">
+    Conserto profissional de notebooks e PCs.<br>
+    Diagnóstico honesto, sem enrolação.
+</p>
 
         <a class="btn" href="https://wa.me/5511959637766">
             Falar direto com o técnico
